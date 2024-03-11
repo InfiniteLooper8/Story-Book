@@ -1,0 +1,18 @@
+# takes user's input and use it to create a story
+# ask user for input
+
+print("""
+Once upone a time in a far away land, there was a Kingdom called\033[35m Zimbia\033[0m. In this Kingdom lived a princess called\033[36m Lati\033[0m.
+One day, while playing in the garden,\033[36m Lati\033[0m was attacked by a dragon. The\033[32m dragon\033[0m was very strong and very dangerous. He took princes to his cave. The King promised to give princes's hand and a half of his Kingdom to whoever rescues the princess.
+If you have received this message, it means that pricess\033[36m Lati\033[0m is still held by dragon. Will you help her?
+""")
+# asks user if they agree to rescue the princess
+rescue = input(" Will you rescue princess\033[36 mLati\033[0m? (yes/no) ")
+# if user says yes, then the story continues
+if rescue == "yes":
+  yourName = input("What is your name? ")
+  superPower = input("What is your super power? ")
+  weapon = input("What weapon wil you use? ")
+  print(f"Hello\033[36m {yourName}\033[0m! Your ability to {superPower} will make sure that the princess never have to look at the\033[32m dragon\033[0m again. Go rescue the princess and use {weapon} for it!")
+else:
+  print("You are\033[33m not worthy\033[0m of princess and half of the Kingdom. You are too scared of the dragon.")
